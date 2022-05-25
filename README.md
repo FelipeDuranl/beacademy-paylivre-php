@@ -26,11 +26,13 @@ Sprint - 5 de PHP.
 
 ## Configuração de extensão
 > Abra o arquivo da pasta C:/php/php.ini-production e configure as extenções para usar no seu projeto
-> Para esse projeto sera necessãrio descomentar as linhas 918, 928, 930 e 936.
+> Para esse projeto sera necessário descomentar as linhas 918, 928, 930 e 936.
 
 ## Terminal interativo (Interactive Shell)
 * Permite você testar alguns scripts, antes de trabalhar diretamente com a web
-``echo 'Ola Mundo!'``
+``echo 'Ola Mundo!';``
 
 ## Comandos
 `echo` - exibe algo na tela; Aspas simples (') – Indica que estou abrindo um container onde posso escrever praticamente qualquer coisa; Texto: Posso exibir quase qualquer coisa aqui dentro.
+
+`;` - necessário o ponto e virgula ";" no final de cada linha de comando. (echo 'Ola mundo'; echo 'Me chamo Felipe';)

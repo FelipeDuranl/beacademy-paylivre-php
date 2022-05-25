@@ -19,7 +19,7 @@ Sprint - 5 de PHP.
 >>   7. Clique em "ok" e feche o terminal.
 
 ## Como executar o PHP
-> 1. Abra o editor de texto ou prompt de comando.
+> 1. Abra o editor de código ou prompt de comando.
 > 2. Inicie um terminal e Abra a pasta onde há o arquvo PHP.
 > 3. Digite php -S localhost:8000 para iniciar o servidor local.
 > 4. Entre no seu navegador e abra seu localhost. 

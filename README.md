@@ -31,8 +31,9 @@ Sprint - 5 de PHP.
 ## Terminal interativo (Interactive Shell)
 Permite você testar alguns scripts antes de trabalhar diretamente com a web
 ``echo 'Ola Mundo!';``
+![Interactive Shell](/assets/images/interactive-shell.PNG)
 
 ## Comandos
 `echo` - exibe algo na tela; Aspas simples (') – Indica que estou abrindo um container onde posso escrever praticamente qualquer coisa; Texto: Posso exibir quase qualquer coisa aqui dentro.
 
-`;` - necessário o ponto e virgula ";" no final de cada linha de comando. ( echo 'Ola mundo'; echo 'Me chamo Felipe'; ).
+`;` - necessário o ponto e virgula ";" no final de cada linha de comando. (echo 'Ola mundo'; echo 'Me chamo Felipe';).

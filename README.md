@@ -29,7 +29,7 @@ Sprint - 5 de PHP.
 > Para esse projeto sera necessário descomentar as linhas 918, 928, 930 e 936.
 
 ## Terminal interativo (Interactive Shell)
-* Permite você testar alguns scripts, antes de trabalhar diretamente com a web
+Permite você testar alguns scripts, antes de trabalhar diretamente com a web
 ``echo 'Ola Mundo!';``
 
 ## Comandos

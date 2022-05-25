@@ -5,7 +5,7 @@ Sprint - 5 de PHP.
 [![PHP, Hypertext Preprocessort](/assets/images/php-logo.svg)](https://www.php.net/)
 
 
-## Como instalar o PHP
+## Como instalar o PHP - Windowns
 > 1. Instalar o PHP  - ***https://www.php.net/downloads ***.
 > 2. Extrair a pasta para o **Disco Local (C:)**.
 > 3. Abrir o VS Code ou Prompt de Comandos (\php\php -v) para vizualizar a versão.
@@ -23,3 +23,14 @@ Sprint - 5 de PHP.
 > 2. Inicie um terminal e Abra a pasta onde há o arquvo PHP.
 > 3. Digite php -S localhost:8000 para iniciar o servidor local.
 > 4. Entre no seu navegador e abra seu localhost. 
+
+## Configuração de extensão
+> Abra o arquivo da pasta C:/php/php.ini-production e configure as extenções para usar no seu projeto
+> Para esse projeto sera necessãrio descomentar as linhas 918, 928, 930 e 936.
+
+## Terminal interativo (Interactive Shell)
+* Permite você testar alguns scripts, antes de trabalhar diretamente com a web
+``echo 'Ola Mundo!'``
+
+## Comandos
+`echo` - exibe algo na tela; Aspas simples (') – Indica que estou abrindo um container onde posso escrever praticamente qualquer coisa; Texto: Posso exibir quase qualquer coisa aqui dentro.

@@ -6,7 +6,7 @@ Sprint - 5 de PHP.
 
 
 ## Como instalar o PHP - Windowns
-> 1. Instalar o PHP  - ***https://www.php.net/downloads ***.
+> 1. Instalar o PHP  - **PHP Download[PHP](https://www.php.net/downloads)** .
 > 2. Extrair a pasta para o **Disco Local (C:)**.
 > 3. Abrir o VS Code ou Prompt de Comandos (\php\php -v) para vizualizar a versão.
 > 4. Criar Variavel de Ambiente .
@@ -21,8 +21,9 @@ Sprint - 5 de PHP.
 ## Como executar o PHP
 > 1. Abra o editor de código ou prompt de comando.
 > 2. Inicie um terminal e Abra a pasta onde há o arquvo PHP.
-> 3. Digite php -S localhost:8000 para iniciar o servidor local.
-> 4. Entre no seu navegador e abra seu localhost. 
+> 3. Digite `php -S localhost:8000` para iniciar o servidor local.
+> 4. Ou digite `php -S localhost:8000 -t "seu diretorio"` para subir um servidor apontando para esse diretório. (Como estivesse criando um dominio "localhost:8000/seu-diretorio")
+> 5. Entre no seu navegador e abra seu localhost. 
 
 ## Configuração de extensão
 > Abra o arquivo da pasta C:/php/php.ini-production e configure as extenções para usar no seu projeto.
@@ -31,9 +32,12 @@ Sprint - 5 de PHP.
 ## Terminal interativo (Interactive Shell)
 Permite você testar alguns scripts antes de trabalhar diretamente com a web
 ``echo 'Ola Mundo!';``
+
 ![Interactive Shell](/assets/images/interactive-shell.PNG)
 
 ## Comandos
+`<?php CODIGO AQUI ?>` - Tag PHP.
+
 `echo` - exibe algo na tela; Aspas simples (') – Indica que estou abrindo um container onde posso escrever praticamente qualquer coisa; Texto: Posso exibir quase qualquer coisa aqui dentro.
 
 `;` - necessário o ponto e virgula ";" no final de cada linha de comando. (echo 'Ola mundo'; echo 'Me chamo Felipe';).

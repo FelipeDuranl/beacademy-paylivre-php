@@ -42,7 +42,7 @@
             }
 
             if(isset($_POST["multiplicacao"])){
-                echo $_POST['num_um']. ' * ' .$_POST['num_dois']. ' = ' .$_POST['num_um'] - $_POST['num_dois'];  
+                echo $_POST['num_um']. ' * ' .$_POST['num_dois']. ' = ' .$_POST['num_um'] * $_POST['num_dois'];  
             }
 
             if(isset($_POST["divisao"])){

@@ -19,7 +19,9 @@ function cadastro()
 
         fclose($arquivo);
 
-        echo 'Pronto, cadastro realizado!';
+        $mensagem = 'Pronto, cadastro realizado!';
+
+        include 'telas/mensagem.php';
     }
 
     include 'telas/cadastro.php';
@@ -44,4 +46,60 @@ function listar()
 function erro404()
 {
     include 'telas/erro404.php';
+}
+
+//CRUD
+function excluir()
+{
+    $id = $_GET['id'];
+
+    $contacts = file('data/contacts.csv');
+
+    unset($contacts[$id]);
+
+    unlink('data/contacts.csv');
+
+    $arquivo = fopen('data/contacts.csv', 'a+');
+
+    foreach ($contacts as $eachContacts) {
+        fwrite($arquivo, $eachContacts);
+    }
+    $mensagem = 'Pronto, contato exluido!';
+    include 'telas/mensagem.php';
+
+    fclose($arquivo);
+}
+
+function editar()
+{
+    $id = $_GET['id'];
+
+    $contacts = file('data/contacts.csv');
+
+    if ($_POST) {
+
+        $nome = $_POST['nome'];
+        $email = $_POST['email'];
+        $tel = $_POST['telefone'];
+
+        $contacts[$id] = "{$nome};{$email};{$tel}" . PHP_EOL;
+
+        unlink('data/contacts.csv');
+
+        $arquivo = fopen('data/contacts.csv', 'a+');
+
+        foreach ($contacts as $eachContacts) {
+            fwrite($arquivo, $eachContacts);
+        }
+
+        fclose($arquivo);
+
+        $mensagem = 'Pronto, contato editado';
+
+        include 'telas/mensagem.php';
+    }
+
+    $data = explode(';', $contacts[$id]);
+
+    include 'telas/editar.php';
 }

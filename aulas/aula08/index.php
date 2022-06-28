@@ -2,12 +2,9 @@
 
 $url = $_SERVER['REQUEST_URI'];
 
-if ($url === '/') {
-    echo '<h1>Pagina Inicial</h1>';
-} elseif ($url === '/login') {
-    echo '<h1>Página Login</h1>';
-} elseif ($url === '/cadastro') {
-    echo '<h1>Cadastro</h1>';
-} else {
-    echo '<h1>Padina não encontrada</h1>';
-}
+echo match ($url) {
+    '/' => 'Pagina Inicial',
+    '/login' => '<form method="post"><input type="text" name="user" placehoader="Digite seu usuário"><br><button>Login</button></form>',
+    '/cadastro' => '<form method="post"><input type="text" name="user" placehoader="Digite seu usuário"><br><button>Cadastrar</button></form>',
+    default => 'Página inválida?!'
+};

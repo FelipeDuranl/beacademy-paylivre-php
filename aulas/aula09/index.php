@@ -4,15 +4,27 @@ $url = $_SERVER['REQUEST_URI'];
 
 include 'telas/head.php';
 include 'telas/menu.php';
+include 'action.php';
 
-if ($url === '/') {
-    include 'telas/home.php';
-} elseif ($url === '/login') {
-    include 'telas/login.php';
-} elseif ($url === '/cadastro') {
-    include 'telas/cadastro.php';
-} else {
-    include 'telas/erro404.php';
-}
+// if ($url === '/') {
+//     home();
+// } elseif ($url === '/login') {
+//     login();
+// } elseif ($url === '/cadastro') {
+//     cadastro();
+// } elseif ($url === '/listar') {
+//     listar();
+// } else {
+//     erro404();
+// }
+
+echo match ($url) {
+    '/' => home(),
+    '/login' => login(),
+    '/cadastro' => cadastro(),
+    '/listar' => listar(),
+    default => erro404()
+};
+
 
 include 'telas/footer.php';

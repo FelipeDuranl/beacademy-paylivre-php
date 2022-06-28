@@ -47,3 +47,24 @@ Permite você testar alguns scripts antes de trabalhar diretamente com a web
 `;` - necessário o ponto e virgula ";" no final de cada linha de comando. (echo 'Ola mundo'; echo 'Me chamo Felipe';).
 
 `$_POST` - É uma variável super global PHP que é usada para coletar dados de formulário após enviar um formulário HTML com `method="post"`. `$_POST` também é amplamente usado para passar variáveis. O exemplo abaixo mostra um formulário com um campo de entrada e um botão de envio.
+
+## GET & POST
+
+> Quais informações um usuário consegue capturar da URL de forma prática?
+> $_GET -> Ele pega informações pela URL.
+> $\_POST -> Ele pega informações de um formulário.
+> **Elas são váriaveis super globais.**
+
+## $\_SERVER['REQUEST_URI']
+
+> Retona a url que o usuário foi direcionado
+
+## Include
+
+> Vai ser o controlador "include paht/test.php".
+
+## Function
+
+> Um codigo pronto para reutilizar
+> void => tipar quando nao existe retorno
+> tipar o return: function exemplo(float $n1, float $n2): float

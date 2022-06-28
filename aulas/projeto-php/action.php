@@ -7,6 +7,21 @@ function login()
 
 function cadastro()
 {
+    if ($_POST) {
+
+        $nome = $_POST['nome'];
+        $email = $_POST['email'];
+        $tel = $_POST['telefone'];
+
+        $arquivo = fopen('data/contacts.csv', 'a+');
+
+        fwrite($arquivo, "{$nome};{$email};{$tel}" . PHP_EOL);
+
+        fclose($arquivo);
+
+        echo 'Pronto, cadastro realizado!';
+    }
+
     include 'telas/cadastro.php';
 }
 

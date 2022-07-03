@@ -4,6 +4,29 @@ declare(strict_types=1);
 
 class Aluno //Classe
 {
-    public string $nome; //Atributos
-    public string $cpf; //Atributos
+    //Atributos
+    private string $nome;
+    private string $cpf;
+
+    //Metodos
+
+    public function getNomeAluno(): string
+    {
+        return $this->nome;
+    }
+
+    public function setNomeAluno(string $novoNome): void
+    {
+        $this->nome = $novoNome;
+    }
+
+    public function getCpfAluno(): string
+    {
+        return $this->cpf;
+    }
+
+    public function setCpfAluno(string $novoCpf): void
+    {
+        $this->cpf = $novoCpf;
+    }
 }

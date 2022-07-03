@@ -3,12 +3,12 @@
 include 'Produto.php';
 
 $p1 = new Produto();
-$p1->alterarNome('Tenis de corrida');
-$p1->alterarValor(299);
+$p1->setNome('Tenis de corrida');
+$p1->setValor(299);
 
-// $p2 = new Produto();
-// $p2->nome = 'Calça';
-// $p2->preco = -100;
+$p2 = new Produto();
+$p2->setNome('Calça');
+$p2->setValor(100);
 
 var_dump($p1);
 // var_dump($p2);

@@ -6,21 +6,21 @@ include 'Disciplina.php';
 include 'Curso.php';
 
 $a1 = new Aluno(); //Instanciando, objeto Aluno
-$a1->nome = 'Felipe';
-$a1->cpf = '123.123.123-12';
+$a1->setNomeAluno('Felipe');
+$a1->setCpfAluno('123.123.123-00');
 
 $professor1 = new Professor(); //Objeto Professor
-$professor1->nome = 'José';
-$professor1->cpf = '145.656.587-00';
-$professor1->salario = '2500';
+$professor1->setNomePRofessor('José');
+$professor1->setCpfProfessor('145.656.587-00');
+$professor1->setSalarioProfessor('2500');
 
 $cursoPHP = new Curso(); //objeto Curso
-$cursoPHP->nome = 'Introdução ao PHP';
-$cursoPHP->descricao = 'Aprender o basico e intermediario do PHP';
-$cursoPHP->cargaHoraria = 88;
+$cursoPHP->setNomeCurso('Introdução ao PHP');
+$cursoPHP->setDescricaoCurso('Aprender o basico e intermediario do PHP');
+$cursoPHP->setCargaCurso(88);
 
 $disciplina = new Disciplina();
-$disciplina->nome = 'Gestão empresarial';
-$disciplina->curso = 'Economia';
+$disciplina->setNomeDisciplina('Gestão empresarial');
+$disciplina->setCursoDisciplina('Economia');
 
-echo "<h1>Aluno: {$a1->nome}</h1>";
+echo "<h1>" . $a1->getNomeAluno() . "</h1>";

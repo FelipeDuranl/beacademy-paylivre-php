@@ -8,11 +8,13 @@ class Produto
     private string $nome;
     private float $valor;
     private string $descricao;
+    private Categoria $categoria;
 
-    public function __construct(string $novoNome, float $novoValor)
+    public function __construct(string $nome, float $valor, Categoria $categoria)
     {
-        $this->nome = $novoNome;
-        $this->valor = $novoValor;
+        $this->nome = $nome;
+        $this->valor = $valor;
+        $this->categoria = $categoria;
     }
 
     //Metodos
